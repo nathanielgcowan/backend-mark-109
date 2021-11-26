@@ -36,6 +36,7 @@ class MypokemonsController < ApplicationController
   # DELETE /mypokemons/1
   def destroy
     @mypokemon.destroy
+    render json: @mypokemon
   end
 
   private
